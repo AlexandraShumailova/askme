@@ -1,0 +1,35 @@
+
+.question-block-header{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.question-block-header img{
+    display: block;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    height: 150px;
+    object-fit: cover;
+    width: 150px;
+    margin-right: 20px;
+}
+.answer {
+    padding: 10px 10px;
+    margin-right: 20px;
+}
+.question-block .quection-text, .answer-block .answer-text{
+    font-size: 15px;
+    line-height: 20px;
+    word-break: break-word;
+    padding-right: 15px;
+}
+.answer-list {
+    margin-bottom: 20px;
+    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.54) ;
+    border-top: 1px solid rgba(0, 0, 0, 0.54) ;
+}
+.your-answer-block{
+    margin-bottom: 20px;
+    padding: 10px 0;
+}

@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+    <title>Ask</title> 
+    <link rel="stylesheet" href="../static/css/css.css">
+    <link rel="stylesheet" href="../static/css/css_base.css">
+    <link rel="stylesheet" href="../static/css/css_base_body.css">
+    <link rel="stylesheet" href="../static/css/css_left.css">
+    <link rel="stylesheet" href="../static/css/css_question.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+
+
+  <body>
+    <div id="header-wrapper">
+        <header id="header">
+            <div class="logo">
+                <img src="../static/img/AskMe.png" class="avatar">
+            </div>
+            <div class="search">
+                <input class="form-control" type="text" placeholder="Search...">
+                <button type="submit" class="btn btn-light">Ask!</button>
+            </div>
+            <div class="stretcher" style="margin: 0 auto"></div>
+            <div class="dropdown-user" id="dropdown-user">
+                <img src="../static/img/avatar60.png" class="avatar">
+                <span class="user-name">User Name</span>
+            </div>
+            <ul class="nav">
+                <li class="settings">
+                    <a>Settings</a>
+                </li>
+                <li class="log out">
+                    <a>Log out</a>
+                </li>
+            </ul>
+        </header>
+    </div>
+    <div id="wrapper">
+        <div id="content">
+            <div class="feed">
+                <div class="left">
+                    <header class="block-header">
+                        <div class="question-block-header">
+                            <p class="question-name">
+                                <h2>New question</h2>
+                            </p> 
+                        </div>
+                    </header>
+                    <div class="error">Sorry, but error...</div>
+                    <div class="add-answer-block">
+                        <table class="add-answer-table">
+                            <tbody>
+                                <tr class="add-answer-table-item">
+                                    <td class="add-answer-table-item-name">Title</td>
+                                    <td class="add-answer-table-item-textfield">
+                                        <input class="form-control" type="text" placeholder="Login" aria-label="default input example">
+                                    </td>
+                                </tr>
+                                <tr class="add-answer-table-item">
+                                    <td class="add-answer-table-item-name">Text</td>
+                                    <td class="add-answer-table-item-textfield">
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </td>
+                                </tr>
+                                <tr class="add-answer-table-item">
+                                    <td class="add-answer-table-item-name">Tags</td>
+                                    <td class="add-answer-table-item-textfield">
+                                        <input class="form-control" type="text" placeholder="Login" aria-label="default input example">
+                                    </td>
+                                </tr>
+                                <tr class="add-answer-table-item">
+                                    <td class="add-answer-table-item-name"></td>
+                                    <td class="add-answer-table-item-textfield">
+                                        <button type="submit" class="btn btn-primary">Ask!</button>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>    
+                    </div>
+
+                    
+
+                    
+                    
+                </div>
+                <div class="right">
+                    <div class="block">
+                        <header class="block-header">
+                            <h2>Popular tags</h2>
+                        </header>
+                        <div class="ul-tags">
+                            <span class="tags">perl</span>
+                            <span class="tags">python</span>
+                            <span class="tags">technoPark</span>
+                            <span class="tags">MySQL</span>
+                            <span class="tags">django</span>
+                            <span class="tags">Mail.ru</span>
+                            <span class="tags">Voloshin</span>
+                            <span class="tags">FireFox</span>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <header class="block-header">
+                            <h2>Best Members</h2>
+                        </header>
+                        <ul class="ul-members">
+                            <li class="members">
+                                <a href="">Mr.Freeman</a>
+                            </li>
+                            <li class="members">
+                                <a href="">Dr. House</a>
+                            </li>
+                            <li class="members">
+                                <a href="">Queen Victoria</a>
+                            </li>
+                            <li class="members">
+                                <a href="">V. Pupkin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div id="footer-content">by Шумайлова Александра, ANDR-12</div>
+    </footer>
+  </body>
+</html>

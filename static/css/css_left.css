@@ -1,0 +1,96 @@
+.left-feed {
+    display: flex;
+    flex-direction: row;
+}
+.new {
+    margin-right: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+.tag-header, .tag-mean, .settings-header, .settings-mean, .registration-header, .login-header {
+    margin-right: 20px;
+    padding: 5px;
+}
+.hot {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.question-block, .answer-block {
+    border: 1px solid rgba(0,0,0,.12);
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.avatar-wrapper {
+    padding: 10px 10px;
+    margin-right: 20px;
+}
+.question-block img, .answer-block img{
+    display: block;
+    margin-bottom: 20px;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    height: 80px;
+    object-fit: cover;
+    width: 80px;
+}
+.question {
+    padding: 10px 20px;    
+}
+
+.pagination, .pagination div {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.pagination div {
+    justify-content: stretch;
+}
+.pagination div span {
+    font-size: 15px;
+    line-height: 20px;
+    margin-right: 8px;
+}
+.pagination div span a {
+    border: 1px solid transparent;
+    color: #818189;
+    display: block;
+    padding: 8px 16px;
+}
+
+#like {
+    margin: 10px 0;
+}
+.like-in-block {
+    margin-right: 20px;
+}
+
+.add-answer-table-item,  .settings-table-item{
+    font-size: 16px;
+    line-height: 24px;
+    transition: all .3s ease-in-out;
+    margin: 5px;
+}
+.add-answer-table-item td,  .settings-table-item td{
+    padding: 12px 8px;
+}
+.add-answer-table, .settings-table {
+    width: 100%;
+}
+.error {
+    color: red;
+    padding: 0 8px;
+}
+.settings-table-item-textfield img{
+    display: block;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    height: 150px;
+    object-fit: cover;
+    width: 150px;
+    margin-bottom: 10px;
+}
