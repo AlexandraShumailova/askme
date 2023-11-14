@@ -50,12 +50,12 @@
 .pagination div {
     justify-content: stretch;
 }
-.pagination div span {
+.pagination div span span {
     font-size: 15px;
     line-height: 20px;
     margin-right: 8px;
 }
-.pagination div span a {
+.pagination div span span a {
     border: 1px solid transparent;
     color: #818189;
     display: block;

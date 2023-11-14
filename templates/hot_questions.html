@@ -6,21 +6,20 @@
 
 <header class="block-header">
     <div class="left-feed">
-        <div class="tag-header">
-            <h2>Tag:</h2>
-        </div>
-        <div class="tag-mean">
-            <h2>{{tag.title}}</h2>
+        <div class="new">
+            <h2>Hot questions</h2>
         </div>
     </div>
 </header>
+
 <div class="question-list">
-{% for question in questions %}
+{% for question in hot_questions %}
 
 {% include 'components/question-item.html' %}
 
 {% endfor %}
 </div>
+
 
 <div class="pagination">
     <div class="pagination-pages">
@@ -35,5 +34,5 @@
         </span>
     </div>
 </div>
-               
+
 {% endblock %}

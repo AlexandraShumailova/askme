@@ -1,0 +1,20 @@
+<div class="block">
+    <header class="block-header">
+        <h2>Popular tags</h2>
+    </header>
+    <div class="ul-tags">
+        <span class="tags">perl</span>
+        <span class="tags">python</span>
+        <span class="tags">technoPark</span>
+        <span class="tags">MySQL</span>
+        <span class="tags">django</span>
+        <span class="tags">Mail.ru</span>
+        <span class="tags">Voloshin</span>
+        <span class="tags">FireFox</span>
+        {% for tag in tags %}
+    
+        {% include 'components/tag-item.html' %}
+    
+        {% endfor %}
+    </div>
+</div>

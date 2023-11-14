@@ -1,0 +1,15 @@
+<div class="pagination" style="width: 100%;">
+    <div class="pagination-pages">
+        {% if questions.has_previous %}
+            <span><a href="?page=1">&laquo; first</a></span>
+            <span><a href="?page={{ questions.previous_page_number }}">previous</a></span>
+        {% endif %}
+        <span>
+            Page {{ questions.number }} of {{ questions.paginator.num_pages }}.
+        </span>
+        {% if questions.has_next %}
+            <span><a href="?page={{ questions.next_page_number }}">next</a></span>
+            <span><a href="?page={{ questions.paginator.num_pages }}">last &raquo;</a></span>
+        {% endif %}
+    </div>
+</div>

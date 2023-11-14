@@ -6,14 +6,12 @@
 
 <header class="block-header">
     <div class="question-block-header">
-        <div class="settings-header">
-            <h2>Settings:</h2>
-        </div>
-        <div class="settings-mean">
-            <h2>User Name</h2>
+        <div class="registration-header">
+            <h2>Registration</h2>
         </div> 
     </div>
 </header>
+<div class="error">Sorry, but error...</div>
 <div class="settings-block">
     <table class="settings-table">
         <tbody>
@@ -32,7 +30,13 @@
             <tr class="settings-table-item">
                 <td class="settings-table-item-name">NickName</td>
                 <td class="settings-table-item-textfield">
-                    <input class="form-control" type="text" placeholder="Login" aria-label="default input example">
+                    <input class="form-control" type="text" placeholder="NickName" aria-label="default input example">
+                </td>
+            </tr>
+            <tr class="settings-table-item">
+                <td class="settings-table-item-name">Password</td>
+                <td class="settings-table-item-textfield">
+                    <input type="password" class="form-control" id="inputPassword">
                 </td>
             </tr>
             <tr class="settings-table-item">
@@ -45,7 +49,7 @@
             <tr class="settings-table-item">
                 <td class="settings-table-item-name"></td>
                 <td class="settings-table-item-textfield">
-                    <button type="submit" class="btn btn-light">Save!</button>
+                    <button type="submit" class="btn btn-primary">Register!</button>
                 </td>
             </tr>
         </tbody>
