@@ -39,16 +39,16 @@ def paginate(objects, page, per_page=10):
 # Create your views here.
 def index(request):
     page = request.GET.get('page', 1)
-    return render(request, 'index.html', {'questions': paginate(QUESTIONS, page)})
+    return render(request, 'index.html', {'objects': paginate(QUESTIONS, page)})
 
 def hot_questions(request):
     page = request.GET.get('page', 1)
-    return render(request, 'hot_questions.html', {'hot_questions': paginate(HOT_QUESTIONS, page)})
+    return render(request, 'hot_questions.html', {'objects': paginate(HOT_QUESTIONS, page)})
 
 def question(request, question_id):
     item = QUESTIONS[question_id]
     page = request.GET.get('page', 1)
-    return render(request, 'question.html', {'question': item, 'answers': paginate(ANSWERS, page, 3)})
+    return render(request, 'question.html', {'question': item, 'objects': paginate(ANSWERS, page, 3)})
 
 def ask(request):
     return render(request, 'ask.html')
@@ -66,4 +66,4 @@ def tag(request, tag_id):
     item = TAGS[tag_id]
     page = request.GET.get('page', 1)
     #надо будет выбирать вопросы, которые соответствуют тэгу. сейчас просто буду водить все
-    return render(request, 'tag.html', {'tag': item, 'questions': paginate(QUESTIONS, page)})
+    return render(request, 'tag.html', {'tag': item, 'objects': paginate(QUESTIONS, page)})

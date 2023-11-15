@@ -6,7 +6,7 @@
     {% include 'components/question-item.html' %}
 </header>
 <div class="answer-list">
-    {% for answer in answers %}
+    {% for answer in objects %}
 
     {% include 'components/answer-item.html' %}
 
@@ -20,18 +20,6 @@
     </div>
 </div>
 
-<div class="pagination">
-    <div class="pagination-pages">
-        <span class="active">
-            <a>1</a>
-        </span>
-        <span>
-            <a href="">2</a>
-        </span>
-        <span>
-            <a href="">3</a>
-        </span>
-    </div>
-</div>
+{% include 'components/paginator.html' %}
 
 {% endblock %}

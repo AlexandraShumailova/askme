@@ -4,36 +4,22 @@
 
 {% block content %}
 
-<header class="block-header">
-    <div class="left-feed">
-        <div class="tag-header">
-            <h2>Tag:</h2>
+    <header class="block-header">
+        <div class="left-feed">
+            <div class="tag-header">
+                <h2>Tag:</h2>
+            </div>
+            <div class="tag-mean">
+                <h2>{{tag.title}}</h2>
+            </div>
         </div>
-        <div class="tag-mean">
-            <h2>{{tag.title}}</h2>
-        </div>
+    </header>
+    <div class="question-list">
+        {% for question in objects %}
+            {% include 'components/question-item.html' %}
+        {% endfor %}
     </div>
-</header>
-<div class="question-list">
-{% for question in questions %}
 
-{% include 'components/question-item.html' %}
-
-{% endfor %}
-</div>
-
-<div class="pagination">
-    <div class="pagination-pages">
-        <span class="active">
-            <a>1</a>
-        </span>
-        <span>
-            <a href="">2</a>
-        </span>
-        <span>
-            <a href="">3</a>
-        </span>
-    </div>
-</div>
+    {% include 'components/paginator.html' %}
                
 {% endblock %}

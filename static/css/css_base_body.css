@@ -28,12 +28,7 @@
     margin-bottom: 40px;
     padding: 20px;
 }
-.block .block-header {
-    margin-bottom: 4px;
-    padding-bottom: 16px;
-    position: relative;
-}
-.left .block-header {
+.block .block-header, .left .block-header {
     margin-bottom: 4px;
     padding-bottom: 16px;
     position: relative;
@@ -62,12 +57,44 @@ ul {
     padding-inline-start: 40px;
 }
 #footer {
-    background: rgb(125, 177, 236);
-    padding: 10px 33px;
+    border-top: 2px solid rgba(20, 101, 97, 0.667);
+    margin: 0 33px;
+    padding: 10px 0;
     align-items: center;
     display: flex;
     flex-direction: row;
     font-size: 15px;
     justify-content: space-between;
     line-height: 20px;
+}
+
+#header-wrapper {
+    background: rgb(20, 101, 97);
+    padding: 10px 0;
+}
+.answer-list {
+    margin-bottom: 20px;
+    border-bottom: 3px solid rgba(20, 101, 97, 0.667) ;
+    border-top: 3px solid rgba(20, 101, 97, 0.667);
+}
+.pagination, .pagination div {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.pagination div {
+    justify-content: stretch;
+}
+.pagination div span {
+    font-size: 15px;
+    line-height: 20px;
+    margin-right: 8px;
+}
+.pagination div span a {
+    border: 1px solid transparent;
+    color: #818189;
+    display: block;
+    padding: 8px 16px;
 }

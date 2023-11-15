@@ -13,7 +13,7 @@
 </header>
 
 <div class="question-list">
-{% for question in hot_questions %}
+{% for question in objects %}
 
 {% include 'components/question-item.html' %}
 
@@ -21,18 +21,6 @@
 </div>
 
 
-<div class="pagination">
-    <div class="pagination-pages">
-        <span class="active">
-            <a>1</a>
-        </span>
-        <span>
-            <a href="">2</a>
-        </span>
-        <span>
-            <a href="">3</a>
-        </span>
-    </div>
-</div>
+{% include 'components/paginator.html' %}
 
 {% endblock %}
